@@ -1,0 +1,25 @@
+% Usage: \sep
+% Inserts a pipe with horizontal padding around it
+\newcommand*\sep{\enskip\textbar\enskip}
+
+\usepackage{fontawesome5}
+% Usage: \header
+% Inserts the cover letter header based on commands in information.tex
+
+\newcommand*\header{
+    \begin{center}
+        {\Huge\ltseries\name}
+        
+        \vspace{1.5mm}        
+        {
+            \normalsize\upshape
+            \href{mailto:\email}{\email} \sep
+            \href{https://github.com/nodejk/}{\faGithub} \sep
+            \href{https://www.linkedin.com/in/}{\faLinkedin}
+        }
+    \end{center}
+    \vspace{1.25mm}
+}
+
+% Usage: \recipientname
+% Inserts the cover letter recipient's name based on commands in information.tex or 'Hiring Manager' if the recipient's name is unknown
