@@ -23,3 +23,7 @@ A Rust based CLI application compiler to help in building cover-letter in a syst
 1. update the content of the job applications you usually apply with place holders eg. `$COMPANY_NAME$` and `$POSITION_NAME$`, you wanna apply for.
 2. Additionally, you can add new job types according to your preference by updating `application_type` enum and adding new job types in `content` folder. Also update the `CliFlow` struct to adapt the options display.
 3. compile and run ~ 
+
+
+## ToDos:
+1. Add ChatGPT support for customizing applications.
